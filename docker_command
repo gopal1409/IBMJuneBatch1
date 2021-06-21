@@ -19,4 +19,11 @@
    35  docker top webhost
    36  ps aux
 
+How to check the docker logs
+2  docker container --help
+   43  docker ps
+   44  docker images
+   45  docker top webhost
+   46  docker logs webhost
+
 
