@@ -37,5 +37,11 @@ How to check the docker logs
    56  docker rm ff4b --force
    57  history
 
+How to login inside a container
+66  docker container run -d --name mysql -e MYSQL_RANDOM_ROOT_PASSWORD=true mysql
+docker ps
+   71  docker logs containerid
+   72  docker ps
+   73  docker exec -it 301c /bin/bash
 
 
