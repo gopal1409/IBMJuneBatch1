@@ -10,4 +10,13 @@
 
    18  docker container run --publish 81:80 --detach httpd
    19  docker ps
+   
+   
+   docker as process
+   32  docker run -p 83:80 -d --name webhost nginx
+   33  docker images
+   34  docker ps
+   35  docker top webhost
+   36  ps aux
+
 
