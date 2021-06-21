@@ -25,5 +25,17 @@ How to check the docker logs
    44  docker images
    45  docker top webhost
    46  docker logs webhost
+   
+   How to start stop a container
+   48  docker ps
+   49  docker rm 9cbc
+   51  docker stop 9cbc
+   52  docker ps -a
+   53  docker rm 9cb
+   54  docker ps -a
+   55  docker ps
+   56  docker rm ff4b --force
+   57  history
+
 
 
