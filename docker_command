@@ -43,5 +43,15 @@ docker ps
    71  docker logs containerid
    72  docker ps
    73  docker exec -it 301c /bin/bash
+docker network intercommunication
+ docker network create my_app_net
+  115  docker network ls
+  116  docker run -d --name my_nginx --network my_app_net nginx:alpine
+  117  docker run -d --name proxy --network my_app_net nginx:alpine
+  118  docker network ls
+  119  docker network inspect my_app_net
+  120  docker ps
+  121  docker exec -it proxy ping my_nginx
+  122  docker exec -it my_nginx ping proxy
 
 
