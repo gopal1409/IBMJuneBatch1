@@ -1,0 +1,7 @@
+143  apt install default-jre
+  144  javac
+  145  apt install default-jdk
+  146  javac
+  147  clear
+  148  apt install maven
+  149  mvn --version
