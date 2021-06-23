@@ -1,0 +1,21 @@
+Master Node Installation
+ 371  hostnamectl set-hostname --static k8smaster
+  372  cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
+br_netfilter
+EOF
+
+  373  cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
+net.bridge.bridge-nf-call-ip6tables = 1
+net.bridge.bridge-nf-call-iptables = 1
+EOF
+
+  374  sudo sysctl --system
+  375  apt-get update
+  376  apt-get install -y apt-transport-https ca-certificates curl
+  377  curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
+  378  echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+  379  apt-get update
+  380  apt-get install -y kubelet kubeadm kubectl
+  381  apt-mark hold kubelet kubeadm kubectl
+  382  history
+
