@@ -6,3 +6,8 @@
   304  ls
   305  docker volume ls
   306  docker volume inspect mysql-db
+How to delete a container and reattach a storage
+324  docker rm mysql --force
+  325  docker run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=true -v mysql-db:/var/lib/mysql mysql:8
+  326  docker ps
+  327  docker container inspect mysql
