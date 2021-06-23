@@ -19,4 +19,13 @@ How to delete a container and reattach a storage
   337  docker import
   338  docker import red_panda.tar
   339  docker ps
+  
+  How to save and reload an image
+  344  docker images
+  345  docker save 0a14c7265e23 > whitepandaimage.tar
+  346  ls
+
+  349  docker load < whitepandaimage.tar
+  350  docker images
+
 
