@@ -6,3 +6,45 @@
   458  kubectl apply -f pv.yml
   459  kubectl get pv
   460  kubectl describe pv
+  452  kubectl get nodes
+  453  git clone https://github.com/gopal1409/ibmjunebatch1yaml.git
+  454  ls
+  455  cd ibmjunebatch1yaml/
+  456  ls
+  457  kubectl apply-f pv.yml
+  458  kubectl apply -f pv.yml
+  459  kubectl get pv
+  460  kubectl describe pv
+  461  history
+  462  clear
+  463  kubectl get pv
+  464  kubectl edit pv task-pv-volume
+  465  kubectl get pv
+  466  git pull
+  467  ls
+  468  kubectl apply pvc.yml
+  469  kubectl apply -f pvc.yml
+  470  git pull
+  471  clear
+  472  kubectl get pv
+  473  kubectl apply -f pvc.yml
+  474  kubectl get pv
+  475  kubectl get pvc
+  476  kubectl get nodes -o wide
+  477  kubectl get pvc
+  478  kubectl get pv
+  479  kubectl edit pv task-pv-volume
+  480  kubectl get pv
+  481  kubectl get pvc
+  482  kubectl get pv
+  483  kubectl get pvc
+  484  kubectl edit pvc task-pv-claim
+  485  clear
+  486  git pull
+  487  kubectl apply -f mysqlconfig.yml
+  488  kubectl get configmap
+  489  kubectl describe configmap usermanagement-db-creation-script
+  490  history
+  491  kubectl describe configmap usermanagement-db-creation-script
+  492  history
+root@k8smaster:~/ibmjunebatch1yaml#
