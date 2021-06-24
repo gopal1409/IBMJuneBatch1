@@ -56,3 +56,8 @@
   491  kubectl describe configmap usermanagement-db-creation-script
   492  history
 root@k8smaster:~/ibmjunebatch1yaml#
+
+
+autoscaling in kubernetes
+516  kubectl autoscale deployment myapp-deployment --min=5 --max=10 --cpu-percent=80
+  517  kubectl get hpa
