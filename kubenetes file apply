@@ -61,3 +61,10 @@ root@k8smaster:~/ibmjunebatch1yaml#
 autoscaling in kubernetes
 516  kubectl autoscale deployment myapp-deployment --min=5 --max=10 --cpu-percent=80
   517  kubectl get hpa
+Describe deployment rs pod
+ 526  kubectl get deploy
+  527  kubectl describe deploy myapp-deployment
+  528  kubectl get rs
+  529  kubectl describe rs
+  530  kubectl get pod
+  531  kubectl describe pod myapp-deployment-656889595c-mfw6q
