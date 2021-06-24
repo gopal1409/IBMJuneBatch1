@@ -1,0 +1,8 @@
+453  git clone https://github.com/gopal1409/ibmjunebatch1yaml.git
+  454  ls
+  455  cd ibmjunebatch1yaml/
+  456  ls
+  
+  458  kubectl apply -f pv.yml
+  459  kubectl get pv
+  460  kubectl describe pv
