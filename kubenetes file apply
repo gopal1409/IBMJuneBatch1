@@ -81,3 +81,5 @@ update image
   543  kubectl get deploy
   544  kubectl get rs
   545  kubectl get pod
+   547  kubectl set image deployment/myapp-deployment myapp3-container=piuma/phpsysinfo --record
+
