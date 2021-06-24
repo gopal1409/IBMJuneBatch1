@@ -68,3 +68,11 @@ Describe deployment rs pod
   529  kubectl describe rs
   530  kubectl get pod
   531  kubectl describe pod myapp-deployment-656889595c-mfw6q
+  
+  expose the deployment
+  534  kubectl get deployment
+  535  kubectl expose deployment myapp-deployment --type=NodePort
+  536  kubectl get svc
+  537  kubectl describe svc myapp-deployment
+  538  kubectl get pod -o wide
+
