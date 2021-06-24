@@ -33,6 +33,14 @@
   476  kubectl get nodes -o wide
   477  kubectl get pvc
   478  kubectl get pv
+  
+  How to manage secret in kubernetes
+   493  git pull
+  494  kubectl apply -f secret.yml
+
+  496  kubectl get secret
+  497  kubectl describe secret mysql-db-password
+
   479  kubectl edit pv task-pv-volume
   480  kubectl get pv
   481  kubectl get pvc
