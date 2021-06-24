@@ -76,3 +76,8 @@ Describe deployment rs pod
   537  kubectl describe svc myapp-deployment
   538  kubectl get pod -o wide
 
+update image
+ 542  kubectl set image deployment/myapp-deployment myapp3-container=nginx:1.16.1 --record
+  543  kubectl get deploy
+  544  kubectl get rs
+  545  kubectl get pod
