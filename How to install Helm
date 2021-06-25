@@ -21,5 +21,10 @@ below command will generate an skeleton for deployment file using kubectl
 
 how to install the helm chart
  helm install my-nginx .
+ 
+ dry run on service
+ 705  kubectl expose deploy my-nginx --port 80 --dry-run -o yaml > ./templates/service.yaml
+  706  tree
+
 
 
