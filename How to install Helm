@@ -14,7 +14,8 @@ appVersion: 1.0
 description: this is my first nginx chart
 
 creating our first template deployment
-696  kubectl create deploy my-nginx --image nginx --dry-run -o yaml > ./templates/deployment.yaml
+below command will generate an skeleton for deployment file using kubectl
+696  kubectl create deploy my-nginx --image nginx --dry-run -o yaml > ./templates/deployment.yaml 
   697  tree
   698  cat templates/deployment.yaml
 
