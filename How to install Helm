@@ -19,4 +19,7 @@ below command will generate an skeleton for deployment file using kubectl
   697  tree
   698  cat templates/deployment.yaml
 
+how to install the helm chart
+ helm install my-nginx .
+
 
