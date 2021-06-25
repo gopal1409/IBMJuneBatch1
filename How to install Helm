@@ -13,3 +13,9 @@ version: 0.1.0
 appVersion: 1.0
 description: this is my first nginx chart
 
+creating our first template deployment
+696  kubectl create deploy my-nginx --image nginx --dry-run -o yaml > ./templates/deployment.yaml
+  697  tree
+  698  cat templates/deployment.yaml
+
+
