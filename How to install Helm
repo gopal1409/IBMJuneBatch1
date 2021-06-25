@@ -5,3 +5,11 @@
   651  mv helm /usr/bin/
   652  cd /
   653  helm
+  
+  root@k8smaster:/charts# cat Chart.yaml
+apiVersion: v1
+name: my-nginx
+version: 0.1.0
+appVersion: 1.0
+description: this is my first nginx chart
+
