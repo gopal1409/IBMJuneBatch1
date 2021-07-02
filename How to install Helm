@@ -25,6 +25,9 @@ how to install the helm chart
  dry run on service
  705  kubectl expose deploy my-nginx --port 80 --dry-run -o yaml > ./templates/service.yaml
   706  tree
+  helm value list
+  helm inspect values .
+
 
 
 
