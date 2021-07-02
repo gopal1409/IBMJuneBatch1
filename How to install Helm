@@ -27,6 +27,12 @@ how to install the helm chart
   706  tree
   helm value list
   helm inspect values .
+  
+  Service.yaml changes
+   758  helm upgrade my-nginx . --set service.type=NodePort
+  759  helm upgrade my-nginx . --set service.type=LoadBalancer
+  760  helm upgrade my-nginx . --set service.type=ClusterIP
+
 
 
 
